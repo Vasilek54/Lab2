@@ -19,5 +19,18 @@ public class Main {
         System.out.println(dvd.isBorrowed());
         dvd.returnItem();
         System.out.println(dvd.isBorrowed());
+
+        Patron patron = new Patron("Jake", "0000");
+        System.out.println(patron.getID());
+        System.out.println(patron.getName());
+        System.out.println(patron.getBorrowedItems());
+        patron.borrow(book);
+        System.out.println(patron.getBorrowedItems());
+        patron.borrow(dvd);
+        System.out.println(patron.getBorrowedItems());
+        patron.returnItem(book);
+        System.out.println(patron.getBorrowedItems());
+        patron.returnItem(dvd);
+        System.out.println(patron.getBorrowedItems());
     }
 }
