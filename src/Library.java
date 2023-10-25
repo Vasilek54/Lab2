@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Library implements IManageable {
-    private List<Item> items; // зберігати всі предмети
-    private List<Patron> patrons; // зберігати всіх зареєстрованих читачів
+    protected List<Item> items; // зберігати всі предмети
+    protected List<Patron> patrons; // зберігати всіх зареєстрованих читачів
 
     public Library() {
         this.items = new ArrayList<>();
