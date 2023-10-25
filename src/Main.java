@@ -90,8 +90,6 @@ public class Main {
         System.out.println("Item removed successfully (if it existed).");
     }
 
-    // ...
-
     private static void registerPatron() {
         System.out.println("Enter the name of the patron:");
         String name = scanner.nextLine();
@@ -173,10 +171,7 @@ public class Main {
         }
     }
 
-    // Utility methods to find patron and item by ID
-
     private static Patron findPatronByID(String ID) {
-        // This can be enhanced by storing patrons in a Map for O(1) retrieval
         for (Patron patron : library.patrons) {
             if (patron.getID().equals(ID)) {
                 return patron;
@@ -186,7 +181,6 @@ public class Main {
     }
 
     private static Item findItemByID(String uniqueID) {
-        // This can be enhanced by storing items in a Map for O(1) retrieval
         for (Item item : library.items) {
             if (item.getUniqueID().equals(uniqueID)) {
                 return item;
