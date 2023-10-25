@@ -9,5 +9,15 @@ public class Main {
         System.out.println(book.isBorrowed());
         book.returnItem();
         System.out.println(book.isBorrowed());
+
+        DVD dvd = new DVD("Lord of the rings", "0001", 120);
+        System.out.println(dvd.getUniqueID());
+        System.out.println(dvd.getTitle());
+        System.out.println(dvd.getDuration());
+        System.out.println(dvd.isBorrowed());
+        dvd.borrowItem();
+        System.out.println(dvd.isBorrowed());
+        dvd.returnItem();
+        System.out.println(dvd.isBorrowed());
     }
 }
